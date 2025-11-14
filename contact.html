@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - E-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content for the Contact page -->
+    <main>
+        <div class="content-wrapper">
+            <h1 class="text-shadow">Get In Touch</h1>
+            
+            <p style="text-align: center; margin-bottom: 2rem;">
+                I'd love to hear from you! You can also find me on
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="text-link">LinkedIn</a>.
+            </p>
+
+            <!-- 
+              This is a simple HTML form that will try to open your computer's
+              default email client (like Outlook or Apple Mail).
+              For a real-world site, you'd use a service like Formspree
+              or a custom backend to handle the form submission.
+            -->
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. Created for Business App Development Class.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
