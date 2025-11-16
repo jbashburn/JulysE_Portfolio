@@ -22,6 +22,25 @@ body {
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+/* --- New Main Site Header --- */
+.site-header {
+    width: 100%;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    /* Matched to your nav background */
+    background: rgba(57, 126, 51, 0.1); 
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgb(160, 201, 255); /* Moved border here */
+}
+
+.site-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 0 2px 4px rgba(113, 116, 139, 0.2);
+}
+
+
 /* --- Header & Navigation --- */
 header {
     width: 100%;
@@ -29,7 +48,8 @@ header {
     /* Semi-transparent background for a modern look */
     background: rgba(57, 126, 51, 0.1);
     backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgb(0, 0, 0);
+    /* Removed the border-bottom, it's on .site-header now */
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
 }
 
 nav ul {
@@ -246,6 +266,11 @@ footer {
 
     h2 {
         font-size: 1.5rem;
+    }
+    
+    /* Responsive main site header */
+    .site-header h1 {
+        font-size: 2.25rem;
     }
 
     nav ul {
